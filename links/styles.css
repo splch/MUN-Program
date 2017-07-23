@@ -1,0 +1,238 @@
+/*
+Theme Name: MUN Program
+Description: Layout for MUN Program
+Author: Spencer Churchill
+Author Email: spencer.l.churchill@gmail.com
+Tags: MUN, MUN Program
+*/
+
+html {
+  background: linear-gradient(135deg, #0066cc, #cccccc);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.textbox {
+  color: #ffffff;
+  font-size: 1.3vw;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button {
+  background-color: #cccccc;
+  border: none;
+  cursor: pointer;
+  font-size: 1vw;
+  color: #333333;
+  margin: .05em;
+}
+
+.button:hover {
+  background-color: rgba(204, 204, 204, 0.75);
+}
+
+#topbar {
+  width: 100%;
+  height: 15%;
+}
+
+#committee,
+#topic {
+  text-align: center;
+  transform: translate(50%, 0);
+}
+
+#img1 {
+  width: 7%;
+  position: fixed;
+  margin: .5%;
+}
+
+#committee {
+  width: 50%;
+  color: #ffffff;
+  font-size: 5vw;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#topic {
+  width: 50%;
+  color: #D9D9D9;
+  font-size: 2.3vw;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#help {
+  cursor: pointer;
+  color: #ffffff;
+  position: fixed;
+  right: 1%;
+  top: 5%;
+  width: 1%;
+  transform: translate(1%, -5%);
+  text-align: center;
+  font-size: 1.6vw;
+}
+
+#help:hover {
+  font-weight: bold;
+}
+
+#cols {
+  display: flex;
+  height: 85%;
+}
+
+#leftcol {
+  width: 28.5%;
+  margin-right: 1%;
+}
+
+#splist {
+  width: 100%;
+  height: 100%;
+  border-style: hidden;
+  text-align: center;
+  background: #ffffff;
+}
+
+#sprow input {
+  border-style: hidden;
+  text-align: center;
+  font-size: 1.69vw;
+  width: 100%;
+  margin-bottom: .9vw;
+}
+
+#spscroll {
+  width: 81%;
+  height: 34.6vw;
+  overflow: auto;
+}
+
+#rightbottom {
+  left: 81%;
+  transform: translate(-100%, 0);
+  position: relative;
+}
+
+#centercol {
+  width: 39%;
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 0;
+}
+
+#flagarea>img {
+  max-width: 100%;
+  height: 24vw;
+  border-width: .05em;
+  border-color: #ffffff;
+  z-index: -1;
+}
+
+#bottomcenter {
+  width: 100%;
+}
+
+#incount {
+  text-align: center;
+  font-size: .9vw;
+  color: #666666;
+  background: #ffffff;
+  border: hidden;
+}
+
+#motionstext {
+  padding-top: 10%;
+  width: 51%;
+}
+
+.motions {
+  width: 50%;
+  font-size: 1vw;
+  border-style: solid;
+  border-width: .05em;
+  border-color: #ffffff;
+  border-radius: .4em;
+  resize: none;
+}
+
+#rightcol {
+  width: 28.5%;
+  margin-left: 1%;
+}
+
+#timertop {
+  text-align: center;
+  position: relative;
+  height: 48%;
+  top: 3.8%;
+}
+
+#timermain {
+  text-align: center;
+  height: 60%;
+  width: 65%;
+  font-size: 5vw;
+  border-style: solid;
+  border-width: .02em;
+  border-color: #ffffff;
+  border-radius: .1em;
+}
+
+#topbuttons>input {
+  width: 28%;
+}
+
+#bottombuttons>input {
+  width: 24%;
+}
+
+#bottomdiv {
+  margin-top: 9%;
+}
+
+.right {
+  text-align: right;
+  width: 23%;
+}
+
+.timer {
+  height: 2vw;
+  width: 54%;
+  text-align: center;
+  font-size: 1.3vw;
+  border-style: solid;
+  border-width: .04em;
+  border-color: #ffffff;
+  border-radius: .2em;
+  margin-top: 1%;
+}
+
+#timercaucus {
+  font-size: 3vw;
+  height: 6vw;
+}
+
+#caucustimerbuttons {
+  text-align: center;
+  width: 100%;
+}
+
+#caucustimerbuttons>input {
+  width: 20%;
+}
+
+#sc {
+  position: fixed;
+  width: 2%;
+  bottom: 0;
+  right: 0;
+}
