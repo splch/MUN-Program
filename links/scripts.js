@@ -71,6 +71,7 @@ function imagechange() {
         document.getElementById('inp' + counter1).setAttribute('style', 'background-color:rgba(255,255,0,0.3)');
         if (counter1 != 1) {
             document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'text-decoration:line-through;');
+            document.getElementById('inp' + (counter1 - 1)).setAttributeNode(document.createAttribute("disabled"));
         }
         counter1++;
         return;
@@ -199,6 +200,9 @@ document.getElementById("sc").addEventListener("dragstart", function(e) {
 var intervals = {
   'main': null,
   'caucus': null
+};
+window.onbeforeunload = function(event) {
+    event.returnValue = "Heyya thanks for checkin out my code! U+1F609";
 };
 initaddspeakers();
 extensioncheck();
