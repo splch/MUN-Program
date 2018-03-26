@@ -68,7 +68,7 @@ function imagechange() {
     if (localStorage.getItem('flagchange') === '') {
         if (removeNumber(document.getElementById('inp' + counter1).value.toLowerCase()) === null || removeNumber(document.getElementById('inp' + counter1).value.toLowerCase()) === '') return;
         incount.value = document.getElementById('inp' + counter1).value;
-        document.getElementById('inp' + counter1).setAttribute('style', 'background-color:rgba(255,255,0,0.3);');
+        document.getElementById('inp' + counter1).setAttribute('style', 'background-color:rgba(255,255,0,0.2);');
         if (counter1 != 1) {
             document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'background-color:rgba(211,211,211,0.1);');
             document.getElementById('inp' + (counter1 - 1)).disabled = true;
@@ -86,7 +86,7 @@ function imagechange() {
             scell(flagInput);
         };
         incount.value = flagInput.value;
-        flagInput.setAttribute('style', 'background-color:rgba(255,255,0,0.3);');
+        flagInput.setAttribute('style', 'background-color:rgba(255,255,0,0.2);');
         if (counter1 != 1) {
             document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'background-color:rgba(211,211,211,0.1);');
             document.getElementById('inp' + (counter1 - 1)).disabled = true;
