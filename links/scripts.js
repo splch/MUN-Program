@@ -70,7 +70,7 @@ function imagechange() {
         incount.value = document.getElementById('inp' + counter1).value;
         document.getElementById('inp' + counter1).setAttribute('style', 'background-color:rgba(255,255,0,0.3);');
         if (counter1 != 1) {
-            document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'text-decoration:line-through;');
+            document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'background-color:rgba(211,211,211,0.1);');
             document.getElementById('inp' + (counter1 - 1)).disabled = true;
         }
         counter1++;
@@ -88,7 +88,7 @@ function imagechange() {
         incount.value = flagInput.value;
         flagInput.setAttribute('style', 'background-color:rgba(255,255,0,0.3);');
         if (counter1 != 1) {
-            document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'text-decoration:line-through;');
+            document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'background-color:rgba(211,211,211,0.1);');
             document.getElementById('inp' + (counter1 - 1)).disabled = true;
 			counter1++;
             return;
