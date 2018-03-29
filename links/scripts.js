@@ -84,7 +84,10 @@ function imagechange() {
         flagImage.src = 'images/flags/' + flagSelect + '.svg';
         flagImage.onerror = function() {
             scell(flagInput);
-        };
+			if (flagImage.alt === "Failed to load resource: net::ERR_FILE_NOT_FOUND") {
+				flagImage.src = 'images/flags/united%20nations.svg';
+			}
+        }
         incount.value = flagInput.value;
         flagInput.setAttribute('style', 'background-color:rgba(255,255,0,0.2);');
         if (counter1 != 1) {
@@ -99,15 +102,15 @@ function imagechange() {
 
 function scell(val) {
   $.ajax({
-    type: 'GET',
-    url: "https://api.gettyimages.com:443/v3/search/images?exclude_nudity=true&page_size=1&phrase=" + val.value + "&sort_order=most_popular",
-    beforeSend: function(request) {
-      request.setRequestHeader("Api-Key", 'qbzsagxxtxh8ssyacqe4xqjw');
-    }
-  }).done(function(data) {
-    $('datalist').append("<option value='" + val.value + "'>");
-    $("#progflag").attr("src", data.images[0].display_sizes[0].uri);
-  });
+	  type: 'GET',
+	  url: "https://api.gettyimages.com:443/v3/search/images?exclude_nudity=true&page_size=1&phrase=" + val.value + "&sort_order=most_popular",
+	  beforeSend: function(request) {
+		  request.setRequestHeader("Api-Key", 'qbzsagxxtxh8ssyacqe4xqjw');
+		}
+	}).done(function(data) {
+		$('datalist').append("<option value='" + val.value + "'>");
+		$("#progflag").attr("src", data.images[0].display_sizes[0].uri);
+	});
 }
 
 function removeNumber(s) {
