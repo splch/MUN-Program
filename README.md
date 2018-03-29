@@ -4,11 +4,11 @@
 
 -----------------
 
-**'spencerchurchill.github.io'**
+**`spencerchurchill.github.io`**
 
 ## MVHS MUN Program
 
-** Offering a chrome extension at https://chrome.google.com/webstore/detail/afbickakoipagghmdehbllfpopbjledn **
+**Offering a chrome extension at https://chrome.google.com/webstore/detail/afbickakoipagghmdehbllfpopbjledn**
 
 **Features**
 * Complete customization of color scheme, flags, images, icons, logos, and text
