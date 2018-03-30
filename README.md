@@ -12,14 +12,20 @@
 
 **Features**
 * Complete customization of color scheme, flags, images, icons, logos, and text
+
 * High quality flag images of every country
+
 * Lightweight and fast design
+
 * Optional sound to alert end of speech
 
-Multiple Delegates of the same country (France 1, France 2)\n
-Multiple Speakers' Lists\n
-Running unmoderated and speech timers simultaneously\n
-Committees using people instead of countries (Getty Images API)\n
+Multiple Delegates of the same country (France 1, France 2)
+
+Multiple Speakers' Lists
+
+Running unmoderated and speech timers simultaneously
+
+Committees using people instead of countries (Getty Images API)
 
 
 ## Created by Spencer Churchill
