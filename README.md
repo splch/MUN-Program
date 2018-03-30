@@ -4,7 +4,7 @@
 
 -----------------
 
-**`spencerchurchill.github.io`**
+**`https://spencerchurchill.github.io`**
 
 ## MVHS MUN Program
 
@@ -16,10 +16,10 @@
 * Lightweight and fast design
 * Optional sound to alert end of speech
 
-Multiple Delegates of the same country (France 1, France 2)
-Multiple Speakers' Lists
-Running unmoderated and speech timers simultaneously
-Committees using people instead of countries (Getty Images API)
+Multiple Delegates of the same country (France 1, France 2)\n
+Multiple Speakers' Lists\n
+Running unmoderated and speech timers simultaneously\n
+Committees using people instead of countries (Getty Images API)\n
 
 
 ## Created by Spencer Churchill
