@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/spencerchurchill/spencerchurchill.github.io/master/images/preview.png"><br><br>
+  <img src="https://lh3.googleusercontent.com/ITJzlQp47B17pR8zQ9u5Q-uc0K1EcxV4it54RBTSW11O_8iYcTXBiSTdNmyKjl8a7-_lSHYrJA=w640-h400-e365"><br><br>
 </div>
 
 -----------------
