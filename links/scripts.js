@@ -87,9 +87,10 @@ function imagechange() {
 			if (flagImage.alt === "Failed to load resource: net::ERR_FILE_NOT_FOUND") {
 				flagImage.src = 'images/flags/united%20nations.svg';
 			}
-        }
+        };
         incount.value = flagInput.value;
-        flagInput.setAttribute('style', 'background-color:rgba(255,255,0,0.2);');
+        flagInput.setAttribute('style', 'background-color:rgba(255,255,0,0.2);color: #000000;');
+        flagInput.disabled = true;
         if (counter1 != 1) {
             document.getElementById('inp' + (counter1 - 1)).setAttribute('style', 'background-color:rgba(211,211,211,0.1);');
             document.getElementById('inp' + (counter1 - 1)).disabled = true;
