@@ -200,7 +200,8 @@ document.getElementById("help").onclick = function() {
 
 addEventListener("keyup", function(event) {
     event.preventDefault();
-    if (event.keyCode === 13 && document.activeElement.tagName!=='TEXTAREA') {
+    var focus = document.activeElement.tagName
+    if (event.keyCode === 13 && focus!='TEXTAREA' && focus!='INPUT') {
         document.getElementById("rightbottom").click();
     }
 });
