@@ -106,6 +106,18 @@ function changedesign() {
     localStorage.setItem('gavelcomment', '');
     localStorage.setItem('flagchange', 'x');
   }
+  if (pref === 'ivc') {
+    localStorage.setItem('grad1', '#ffffff');
+    localStorage.setItem('grad2', '#0000cc');
+    localStorage.setItem('deg', '90deg');
+    localStorage.setItem('text', '#cccccc');
+    localStorage.setItem('logourl', 'images/logos/ivc.svg');
+    localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
+    localStorage.setItem('countval', 'Irvine Valley College MUN');
+    localStorage.setItem('gavelspeech', 'x');
+    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('flagchange', 'x');
+  }
   else {
     return;
   }
