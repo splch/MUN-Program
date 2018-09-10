@@ -109,8 +109,8 @@ function changedesign() {
   if (pref === 'ivc') {
     localStorage.setItem('grad1', '#ffffff');
     localStorage.setItem('grad2', '#0000cc');
-    localStorage.setItem('deg', '90deg');
-    localStorage.setItem('text', '#cccccc');
+    localStorage.setItem('deg', '60deg');
+    localStorage.setItem('text', '#ffffff');
     localStorage.setItem('logourl', 'images/logos/ivc.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Irvine Valley College MUN');
