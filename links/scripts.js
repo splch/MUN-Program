@@ -136,6 +136,7 @@ function addspeakers() {
 }
 
 function resetlist() {
+  flagImage.src = 'images/flags/united%20nations.svg';
   counter1 = 1;
   counter2 = 21;
   document.getElementById('spscroll').removeChild(document.getElementById('splist'));
