@@ -4,7 +4,7 @@
 
 -----------------
 
-**`https://spencerchurchill.github.io`**
+**`https://chrome.google.com/webstore/detail/mun-program/afbickakoipagghmdehbllfpopbjledn`**
 
 ## MVHS MUN Program
 
