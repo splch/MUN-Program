@@ -121,7 +121,7 @@ function changedesign() {
   if (pref === 'cb') {
     localStorage.setItem('grad1', '#0066cc');
     localStorage.setItem('grad2', '#000033');
-    localStorage.setItem('deg', '330eg');
+    localStorage.setItem('deg', '330deg');
     localStorage.setItem('text', '#ffffff');
     localStorage.setItem('logourl', 'images/logos/cb.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
