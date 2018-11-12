@@ -32,6 +32,14 @@ body {
   margin: .05em;
 }
 
+#morespeakers {
+  float: left;
+}
+
+#resetlist {
+  float: right;
+}
+
 .button:hover {
   background-color: rgba(204, 204, 204, 0.75);
 }
