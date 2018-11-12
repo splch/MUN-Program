@@ -120,8 +120,8 @@ function changedesign() {
   }
   if (pref === 'cb') {
     localStorage.setItem('grad1', '#0066cc');
-    localStorage.setItem('grad2', '#191d3d');
-    localStorage.setItem('deg', '135deg');
+    localStorage.setItem('grad2', '#000033');
+    localStorage.setItem('deg', '330eg');
     localStorage.setItem('text', '#ffffff');
     localStorage.setItem('logourl', 'images/logos/cb.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
