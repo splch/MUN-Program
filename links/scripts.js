@@ -41,7 +41,6 @@ function tI2S(val) {
 
 function loadTime(val) {
   document.getElementById('timermain').value = document.getElementById(val + 'box').value;
-  localStorage.setItem('gavel', localStorage.getItem('gavel' + val));
 }
 
 function pauseTimer(name) {
@@ -121,7 +120,7 @@ function removeNumber(s) {
 function countFilled() {
   let counter3 = 0;
   for (let i = 1; i < counter2; i++) {
-    if (document.getElementById('inp'+i).value) counter3++;
+    if (document.getElementById('inp' + i).value) counter3++;
   }
   if (counter2 - counter3 < 13) addspeakers(10);
 }
@@ -158,12 +157,16 @@ function startTimer(name) {
   if (intervals[name] || timer.value === 0) return;
   intervals[name] = setInterval(function () {
     let rem = tS2I(timer.value);
-    if (isNaN(rem) === true) return;
+    if (isNaN(rem) === true) {
+      timer.value = '';
+      return;
+    }
     if (rem <= 0) {
       setIntervalX(function () {
         flashy(name);
       }, 500, 4);
-      if (localStorage.getItem('gavel') === 'x' || name === 'caucus') {
+      console.log(169, localStorage.getItem('gavel'));
+      if (localStorage.getItem('gavel') === 'x') {
         new Audio('links/audio.mp3').play();
       }
       clearInterval(intervals[name]);

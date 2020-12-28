@@ -1,23 +1,12 @@
 function save(id, type) {
   var element = document.getElementById(id);
-  if (type === 'toggle') {
-    if (element.value === 'x') {
-      element.value = '';
-    }
-    else {
-      element.value = 'x';
-    }
-  }
+  if (type === 'toggle') element.value = element.value ? '' : 'x'
   localStorage.setItem(id, element.value);
 }
 
 function reload(val) {
-  if (val === 'all') {
-    window.location.reload();
-  }
-  else {
-    document.getElementById('index').contentWindow.location.reload();
-  }
+  if (val === 'all') window.location.reload();
+  else document.getElementById('index').contentWindow.location.reload();
 }
 
 function changedesign() {
@@ -30,8 +19,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/logo.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Model United Nations');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'mvhs') {
@@ -42,8 +30,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/mvhs.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Welcome to MVHS MUN!');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'thhs') {
@@ -54,8 +41,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/thhs.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Welcome to THHS MUN!');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'eths') {
@@ -66,8 +52,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/eths.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Welcome to El Toro MUN!');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'ucb') {
@@ -78,8 +63,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/ucb.svg');
     localStorage.setItem('flagurl', 'images/flags/ucb.svg');
     localStorage.setItem('countval', 'Welcome to Berkeley MUN');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'su') {
@@ -90,8 +74,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/su.svg');
     localStorage.setItem('flagurl', 'images/flags/su.svg');
     localStorage.setItem('countval', 'Welcome to Stanford MUN');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'cmu') {
@@ -102,8 +85,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/cmu.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Carnegie Mellon MUN');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'ivc') {
@@ -114,8 +96,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/ivc.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Irvine Valley College MUN');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   if (pref === 'cb') {
@@ -126,8 +107,7 @@ function changedesign() {
     localStorage.setItem('logourl', 'images/logos/cb.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Carol Baur International MUN');
-    localStorage.setItem('gavelspeech', 'x');
-    localStorage.setItem('gavelcomment', '');
+    localStorage.setItem('gavel', 'x');
     localStorage.setItem('flagchange', 'x');
   }
   else {
@@ -135,47 +115,43 @@ function changedesign() {
   }
 }
 
-document.getElementById("grad1").onchange = function() {
+document.getElementById('grad1').onchange = function () {
   save('grad1'), reload();
 };
-document.getElementById("grad2").onchange = function() {
+document.getElementById('grad2').onchange = function () {
   save('grad2'), reload();
 };
-document.getElementById("deg").onchange = function() {
+document.getElementById('deg').onchange = function () {
   save('deg'), reload();
 };
-document.getElementById("text").onchange = function() {
+document.getElementById('text').onchange = function () {
   save('text'), reload();
 };
-document.getElementById("logourl").onchange = function() {
+document.getElementById('logourl').onchange = function () {
   save('logourl'), reload();
 };
-document.getElementById("flagurl").onchange = function() {
+document.getElementById('flagurl').onchange = function () {
   save('flagurl'), reload();
 };
-document.getElementById('countval').onchange = function() {
+document.getElementById('countval').onchange = function () {
   save('countval'), reload();
 };
-document.getElementById("select").onchange = function() {
+document.getElementById('select').onchange = function () {
   changedesign(), reload('all');
 };
-document.getElementById('gavelspeech').onclick = function() {
-  save('gavelspeech', 'toggle');
+document.getElementById('gavel').onclick = function () {
+  save('gavel', 'toggle');
 };
-document.getElementById('gavelcomment').onclick = function() {
-  save('gavelcomment', 'toggle');
-};
-document.getElementById('flagchange').onclick = function() {
+document.getElementById('flagchange').onclick = function () {
   save('flagchange', 'toggle');
 };
 
-document.getElementById('grad1').setAttribute("value", localStorage.getItem('grad1'));
-document.getElementById('grad2').setAttribute("value", localStorage.getItem('grad2'));
-document.getElementById('deg').setAttribute("value", localStorage.getItem('deg'));
-document.getElementById('text').setAttribute("value", localStorage.getItem('text'));
-document.getElementById('gavelspeech').setAttribute("value", localStorage.getItem('gavelspeech'));
-document.getElementById('gavelcomment').setAttribute("value", localStorage.getItem('gavelcomment'));
-document.getElementById('flagchange').setAttribute("value", localStorage.getItem('flagchange'));
-document.getElementById('logourl').setAttribute("value", localStorage.getItem('logourl'));
-document.getElementById('flagurl').setAttribute("value", localStorage.getItem('flagurl'));
-document.getElementById('countval').setAttribute("value", localStorage.getItem('countval'));
+document.getElementById('grad1').setAttribute('value', localStorage.getItem('grad1'));
+document.getElementById('grad2').setAttribute('value', localStorage.getItem('grad2'));
+document.getElementById('deg').setAttribute('value', localStorage.getItem('deg'));
+document.getElementById('text').setAttribute('value', localStorage.getItem('text'));
+document.getElementById('gavel').setAttribute('value', localStorage.getItem('gavel'));
+document.getElementById('flagchange').setAttribute('value', localStorage.getItem('flagchange'));
+document.getElementById('logourl').setAttribute('value', localStorage.getItem('logourl'));
+document.getElementById('flagurl').setAttribute('value', localStorage.getItem('flagurl'));
+document.getElementById('countval').setAttribute('value', localStorage.getItem('countval'));

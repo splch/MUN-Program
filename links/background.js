@@ -1,11 +1,11 @@
 chrome.browserAction.onClicked.addListener(function(activeTab) {
   chrome.tabs.create({
-    url: "index.html"
+    url: 'index.html'
   });
 });
 
 chrome.runtime.onInstalled.addListener(function(details){
-  if(details.reason == "install"){
+  if(details.reason == 'install'){
     localStorage.setItem('grad1', '#0066cc');
     localStorage.setItem('grad2', '#cccccc');
     localStorage.setItem('deg', '135deg');
@@ -13,8 +13,7 @@ chrome.runtime.onInstalled.addListener(function(details){
     localStorage.setItem('logourl', 'images/logos/logo.svg');
     localStorage.setItem('flagurl', 'images/flags/united%20nations.svg');
     localStorage.setItem('countval', 'Model United Nations');
-    localStorage.setItem('gavelspeech','x');
-    localStorage.setItem('gavelcomment','');
+    localStorage.setItem('gavel','x');
     localStorage.setItem('flagchange','x');
   }
   else{
