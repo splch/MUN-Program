@@ -8,7 +8,7 @@
     "https://en.wikipedia.org/w/api.php"
   ],
   "short_name": "MUN",
-  "version": "9.85",
+  "version": "9.86",
   "icons": {
     "128": "images/logos/icon.png"
   },
