@@ -25,7 +25,7 @@ Multiple Speakers' Lists
 
 Running unmoderated and speech timers simultaneously
 
-Committees using people instead of countries (Getty Images API)
+Committees using people instead of countries (Wikipedia API)
 
 
 ## Created by Spencer Churchill

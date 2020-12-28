@@ -4,7 +4,8 @@
   "author": "Spencer Churchill",
   "permissions": [
     "tabs",
-    "storage"
+    "storage",
+    "https://en.wikipedia.org/w/api.php"
   ],
   "short_name": "MUN",
   "version": "9.83",
