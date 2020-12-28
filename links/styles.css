@@ -33,10 +33,6 @@ body {
 }
 
 #morespeakers {
-  float: left;
-}
-
-#resetlist {
   float: right;
 }
 
@@ -122,7 +118,8 @@ body {
 #spscroll {
   width: 81%;
   height: 34.6vw;
-  overflow: auto;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 #rightbottom {
@@ -184,7 +181,7 @@ body {
   top: 3.8%;
 }
 
-#timermain {
+#timermain:disabled {
   text-align: center;
   height: 60%;
   width: 65%;
@@ -192,6 +189,7 @@ body {
   border-style: solid;
   border-width: .02em;
   border-color: #ffffff;
+  background-color: #ffffff;
 }
 
 #topbuttons>input {
