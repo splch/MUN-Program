@@ -85,7 +85,7 @@ function imagechange() {
 
 function scell(val) {
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&generator=search&prop=pageimages&piprop=original&gsrsearch=' + encodeURI(val.value));
+  xhr.open('GET', 'https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&formatversion=2&generator=search&prop=pageimages&piprop=original&gsrsearch=' + encodeURI(val.value));
   xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       let status = xhr.status;
