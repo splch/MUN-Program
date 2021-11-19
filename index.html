@@ -1,39 +1,277 @@
 <!DOCTYPE html>
 <html id='html'>
-
-<head>
-  <title>MUN Program</title>
-  <link id='progicon' rel='icon' href='images/logos/icon.png'>
-  <link rel='stylesheet' href='links/style.css'>
-  <meta name='theme-color' content='#0066cc'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <script src='links/script.js' defer></script>
-</head>
-
-<body> <label id='help'>?</label> <img src='images/logos/logo.svg' alt='logo' id='img1' draggable='true'>
-  <div id='topbar'> <input type='text' maxlength='100' placeholder='Committee' id='committee'> <input type='text' maxlength='100' placeholder='Topic' id='topic'> </div>
-  <div id='cols'>
-    <div id='leftcol'> <datalist id='speakers'> <option value='Andorra'> <option value='United Arab Emirates'> <option value='Afghanistan'> <option value='Antigua and Barbuda'> <option value='Anguilla'> <option value='Albania'> <option value='Armenia'> <option value='Angola'> <option value='Argentina'> <option value='American Samoa'> <option value='Austria'> <option value='Australia'> <option value='Aruba'> <option value='Aland Islands'> <option value='Azerbaijan'> <option value='Bosnia and Herzegovina'> <option value='Barbados'> <option value='Saint Barthelemy'> <option value='Bangladesh'> <option value='Belgium'> <option value='Burkina Faso'> <option value='Bulgaria'> <option value='Bahrain'> <option value='Burundi'> <option value='Benin'> <option value='Bermuda'> <option value='Brunei Darussalam'> <option value='Bolivia'> <option value='Brazil'> <option value='Bahamas'> <option value='Bhutan'> <option value='Botswana'> <option value='Belarus'> <option value='Belize'> <option value='Canada'> <option value='Cocos (Keeling) Islands'> <option value='DR Congo'> <option value='Central African Republic'> <option value='Congo'> <option value='Switzerland'> <option value='Cote d'Ivoire'> <option value='Cook Islands'> <option value='Chile'> <option value='Cameroon'> <option value='China'> <option value='Colombia'> <option value='Costa Rica'> <option value='Cuba'> <option value='Cape Verde'> <option value='Curacao'> <option value='Christmas Island'> <option value='Cyprus'> <option value='Czech Republic'> <option value='Germany'> <option value='Djibouti'> <option value='Denmark'> <option value='Dominica'> <option value='Dominican Republic'> <option value='Algeria'> <option value='Ecuador'> <option value='Estonia'> <option value='Egypt'> <option value='Eritrea'> <option value='Spain'> <option value='Ethiopia'> <option value='Finland'> <option value='Fiji'> <option value='Falkland Islands (Malvinas)'> <option value='Federated States of Micronesia'> <option value='Faroe Islands'> <option value='France'> <option value='Gabon'> <option value='United Kingdom'> <option value='Grenada'> <option value='Georgia'> <option value='Guernsey'> <option value='Ghana'> <option value='Gibraltar'> <option value='Greenland'> <option value='Gambia'> <option value='Guinea'> <option value='Equatorial Guinea'> <option value='Greece'> <option value='South Georgia'> <option value='Guatemala'> <option value='Guam'> <option value='Guinea-Bissau'> <option value='Guyana'> <option value='Hong Kong'> <option value='Honduras'> <option value='Croatia'> <option value='Haiti'> <option value='Hungary'> <option value='Indonesia'> <option value='Ireland'> <option value='Israel'> <option value='Isle of Man'> <option value='India'> <option value='British Indian Ocean Territory'> <option value='Iraq'> <option value='Iran'> <option value='Iceland'> <option value='Italy'> <option value='Jersey'> <option value='Jamaica'> <option value='Jordan'> <option value='Japan'> <option value='Kenya'> <option value='Kyrgyzstan'> <option value='Cambodia'> <option value='Kiribati'> <option value='Comoros'> <option value='Saint Kitts and Nevis'> <option value='DPRK (North Korea)'> <option value='Republic of Korea'> <option value='Kuwait'> <option value='Cayman Islands'> <option value='Kazakhstan'> <option value='Laos'> <option value='Lebanon'> <option value='Saint Lucia'> <option value='Liechtenstein'> <option value='Sri Lanka'> <option value='Liberia'> <option value='Lesotho'> <option value='Lithuania'> <option value='Luxembourg'> <option value='Latvia'> <option value='Libya'> <option value='Morocco'> <option value='Monaco'> <option value='Republic of Moldova'> <option value='Montenegro'> <option value='Madagascar'> <option value='Marshall Islands'> <option value='Republic of Macedonia'> <option value='Mali'> <option value='Myanmar (Burma)'> <option value='Mongolia'> <option value='Macao'> <option value='Northern Mariana Islands'> <option value='Mauritania'> <option value='Montserrat'> <option value='Malta'> <option value='Martinique'> <option value='Mauritius'> <option value='Maldives'> <option value='Malawi'> <option value='Mexico'> <option value='Malaysia'> <option value='Mozambique'> <option value='Namibia'> <option value='New Caledonia'> <option value='Niger'> <option value='Norfolk Island'> <option value='Nigeria'> <option value='Nicaragua'> <option value='Netherlands'> <option value='Norway'> <option value='Nepal'> <option value='Nauru'> <option value='Niue'> <option value='New Zealand'> <option value='Oman'> <option value='Panama'> <option value='Peru'> <option value='French Polynesia'> <option value='Palestine'> <option value='Papua New Guinea'> <option value='Philippines'> <option value='Pakistan'> <option value='Poland'> <option value='Pitcairn'> <option value='Puerto Rico'> <option value='Portugal'> <option value='Palau'> <option value='Paraguay'> <option value='Qatar'> <option value='Reunion'> <option value='Romania'> <option value='Serbia'> <option value='Russian Federation'> <option value='Rwanda'> <option value='Saudi Arabia'> <option value='Solomon Islands'> <option value='Seychelles'> <option value='Sudan'> <option value='Sweden'> <option value='Singapore'> <option value='Saint Helena'> <option value='Slovenia'> <option value='Slovakia'> <option value='Sierra Leone'> <option value='San Marino'> <option value='Senegal'> <option value='Somalia'> <option value='Suriname'> <option value='South Sudan'> <option value='Sao Tome and Principe'> <option value='El Salvador'> <option value='Sint Maarten'> <option value='Syrian Arab Republic'> <option value='Swaziland'> <option value='Turks and Caicos Islands'> <option value='Chad'> <option value='French Southern Territories'> <option value='Togo'> <option value='Thailand'> <option value='Tajikistan'> <option value='Tokelau'> <option value='Timor-Leste'> <option value='Turkmenistan'> <option value='Tunisia'> <option value='Tonga'> <option value='Turkey'> <option value='Trinidad and Tobago'> <option value='Tuvalu'> <option value='United Republic of Tanzania'> <option value='Taiwan'> <option value='Ukraine'> <option value='Uganda'> <option value='United States of America'> <option value='Uruguay'> <option value='Uzbekistan'> <option value='Holy See (Vatican City)'> <option value='Saint Vincent and the Grenadines'> <option value='Bolivarian Republic of Venezuela'> <option value='Virgin Islands British'> <option value='Virgin Islands U.S.'> <option value='Vietnam'> <option value='Vanuatu'> <option value='Samoa'> <option value='Yemen'> <option value='South Africa'> <option value='Zambia'> <option value='Zimbabwe'> </datalist> <input type='text' value='Speakers' List:' class='textbox' disabled='disabled'>
-      <div id='spscroll'>
-        <table id='splist'>
-          <tr>
-            <td id='sprow'></td>
-          </tr>
-        </table> <input type='button' value='Reset List' class='button' id='resetlist'>
-      </div> <input type='button' value='Next Speaker' class='button' id='rightbottom'> </div>
-    <div id='centercol'>
-      <div id='flagarea'> <img id='progflag' src='images/flags/united%20nations.svg'> </div> <input type='text' disabled='disabled' value='Model United Nations' id='incount'>
-      <div id='bottomcenter'> <input type='text' value='Motions:' class='textbox' id='motionstext' disabled='disabled'> <textarea cols='30' rows='10' class='motions'></textarea> </div>
-    </div>
-    <div id='rightcol'>
-      <div id='timertop'> <input type='text' placeholder='00:00' id='timermain' disabled>
-        <div id='topbuttons'> <input type='button' value='Start' class='button' id='startmainbutton'> <input type='button' value='Pause' class='button' id='pausemainbutton'> </div>
-        <div id='bottombuttons'> <input type='button' value='Speech' class='button' id='speechbutton'> <input type='button' value='Comment' class='button' id='commentbutton'> </div>
-      </div>
-      <div id='bottomdiv'> <input type='text' value='Speech:' class='textbox right' disabled='disabled'> <input type='text' placeholder='01:30' class='timer' id='speechbox'> <input type='text' value='Comment:' class='textbox right' disabled='disabled'> <input type='text' placeholder='00:30' class='timer' id='commentbox'> <input type='text' value='Caucus:' class='textbox right' disabled='disabled'> <input type='text' placeholder='15:00' id='timercaucus' class='timer'>
-        <div id='caucustimerbuttons'> <input type='button' value='Start' class='button' id='starttopbutton'> <input type='button' value='Pause' class='button' id='pausetopbutton'></div>
-      </div><img src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgaWQ9InN2ZyIgICB2ZXJzaW9uPSIxLjEiICAgd2lkdGg9IjEyOSIgICBoZWlnaHQ9IjE1MyIgICBzdHlsZT0iZGlzcGxheTogYmxvY2s7IiAgIGlua3NjYXBlOnZlcnNpb249IjAuNDguNSByMTAwNDAiICAgc29kaXBvZGk6ZG9jbmFtZT0ic2Muc3ZnIj4gIDxtZXRhZGF0YSAgICAgaWQ9Im1ldGFkYXRhMzAzOSI+ICAgIDxyZGY6UkRGPiAgICAgIDxjYzpXb3JrICAgICAgICAgcmRmOmFib3V0PSIiPiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+ICAgICAgICA8ZGM6dHlwZSAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4gICAgICA8L2NjOldvcms+ICAgIDwvcmRmOlJERj4gIDwvbWV0YWRhdGE+ICA8ZGVmcyAgICAgaWQ9ImRlZnMzMDM3IiAvPiAgPHNvZGlwb2RpOm5hbWVkdmlldyAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiICAgICBib3JkZXJvcGFjaXR5PSIxIiAgICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIgICAgIGdyaWR0b2xlcmFuY2U9IjEwIiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTA0NyIgICAgIGlkPSJuYW1lZHZpZXczMDM1IiAgICAgc2hvd2dyaWQ9ImZhbHNlIiAgICAgaW5rc2NhcGU6em9vbT0iNC4xMjUiICAgICBpbmtzY2FwZTpjeD0iMTIwIiAgICAgaW5rc2NhcGU6Y3k9IjEwMCIgICAgIGlua3NjYXBlOndpbmRvdy14PSIwIiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjAiICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIwIiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnIiAvPiAgPGcgICAgIGlkPSJnMzA0MSI+ICAgIDxnICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDguMjM1MjksLTQzLjgyMzUyOSkiICAgICAgIGlkPSJzdmdnIj4gICAgICA8cGF0aCAgICAgICAgIHN0eWxlPSJmaWxsOiM5MDAwMDA7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiICAgICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgICAgICAgICBkPSJtIDE1OC41LDQ1LjU0NCBjIC0zMy45MSw4LjUzMiAtNTEuNjQ4LDM2Ljc3NyAtNTAuMjEzLDc5Ljk1NiAxLjU4MSw0Ny41OTcgMjUuNjMyLDcxLjA2OSA3Mi43MTMsNzAuOTU5IDM5LjcxNiwtMC4wOTIgNTUuNSwtMTIuNDUxIDU1LjUsLTQzLjQ1OSAwLC0yNS40NTMgLTEwLjI5NCwtMzYuNjU0IC00MC4wOTEsLTQzLjYyMiAtMzQuMjM4LC04LjAwNyAtMzcuOTI3LC0xMC4yMzYgLTM3Ljg5MSwtMjIuODk1IDAuMDcsLTI0LjM0OCA0Ni45NzIsLTI5LjI4NiA2NS41NSwtNi45MDEgMy4yNzcsMy45NDggMy45MzIsMS43NzUgMy45MzIsLTEzLjA0MyBsIDAsLTE0LjQ2MiAtNC4yNSwtMS4xNDYgQyAxOTkuNTU2LDQ0LjQwOCAxNzIuMDQyLDQyLjEzNiAxNTguNSw0NS41NDQgbSAtMjEuMjIxLDU4LjM3OCBjIDQuMTQ5LDExLjY4MyAxNC43NSwxNy45OTkgNDEuMzksMjQuNjYyIDI0Ljk2Niw2LjI0NCAzMi4wMTQsMTAuMDE1IDM0LjMzNSwxOC4zNzIgNS44ODMsMjEuMTc3IC0xNi45MjcsMzUuMzM2IC00NS45MTcsMjguNTAzIC0yNS45NDcsLTYuMTE2IC00MC4wNiwtMzUuMjM5IC0zMy45ODQsLTcwLjEyNyAxLjMyNywtNy42MjMgMS45LC03LjgxNiA0LjE3NiwtMS40MSIgICAgICAgICBpZD0icGF0aDAiIC8+ICAgIDwvZz4gIDwvZz48L3N2Zz4=' alt='Spencer Churchill' title='Created by Spencer Churchill' id='sc'> </div>
-  </div>
-</body>
-
+	<head>
+		<title>MUN Program</title>
+		<link id='progicon' rel='icon' href='images/logos/icon.png'>
+		<link rel='stylesheet' href='links/style.css'>
+		<meta name='theme-color' content='#0066cc'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<script src='links/script.js' defer></script>
+	</head>
+	<body>
+		<label id='help'>?</label> <img src='images/logos/logo.svg' alt='logo' id='img1' draggable='true'>
+		<div id='topbar'> <input type='text' maxlength='100' placeholder='Committee' id='committee'> <input type='text' maxlength='100' placeholder='Topic' id='topic'> </div>
+		<div id='cols'>
+			<div id='leftcol'>
+				<datalist id='speakers'>
+					<option value='Andorra'> 
+					<option value='United Arab Emirates'> 
+					<option value='Afghanistan'> 
+					<option value='Antigua and Barbuda'> 
+					<option value='Anguilla'> 
+					<option value='Albania'> 
+					<option value='Armenia'> 
+					<option value='Angola'> 
+					<option value='Argentina'> 
+					<option value='American Samoa'> 
+					<option value='Austria'> 
+					<option value='Australia'> 
+					<option value='Aruba'> 
+					<option value='Aland Islands'> 
+					<option value='Azerbaijan'> 
+					<option value='Bosnia and Herzegovina'> 
+					<option value='Barbados'> 
+					<option value='Saint Barthelemy'> 
+					<option value='Bangladesh'> 
+					<option value='Belgium'> 
+					<option value='Burkina Faso'> 
+					<option value='Bulgaria'> 
+					<option value='Bahrain'> 
+					<option value='Burundi'> 
+					<option value='Benin'> 
+					<option value='Bermuda'> 
+					<option value='Brunei Darussalam'> 
+					<option value='Bolivia'> 
+					<option value='Brazil'> 
+					<option value='Bahamas'> 
+					<option value='Bhutan'> 
+					<option value='Botswana'> 
+					<option value='Belarus'> 
+					<option value='Belize'> 
+					<option value='Canada'> 
+					<option value='Cocos (Keeling) Islands'> 
+					<option value='DR Congo'> 
+					<option value='Central African Republic'> 
+					<option value='Congo'> 
+					<option value='Switzerland'> 
+					<option value="Cote d'Ivoire"> 
+					<option value='Cook Islands'> 
+					<option value='Chile'> 
+					<option value='Cameroon'> 
+					<option value='China'> 
+					<option value='Colombia'> 
+					<option value='Costa Rica'> 
+					<option value='Cuba'> 
+					<option value='Cape Verde'> 
+					<option value='Curacao'> 
+					<option value='Christmas Island'> 
+					<option value='Cyprus'> 
+					<option value='Czech Republic'> 
+					<option value='Germany'> 
+					<option value='Djibouti'> 
+					<option value='Denmark'> 
+					<option value='Dominica'> 
+					<option value='Dominican Republic'> 
+					<option value='Algeria'> 
+					<option value='Ecuador'> 
+					<option value='Estonia'> 
+					<option value='Egypt'> 
+					<option value='Eritrea'> 
+					<option value='Spain'> 
+					<option value='Ethiopia'> 
+					<option value='Finland'> 
+					<option value='Fiji'> 
+					<option value='Falkland Islands (Malvinas)'> 
+					<option value='Federated States of Micronesia'> 
+					<option value='Faroe Islands'> 
+					<option value='France'> 
+					<option value='Gabon'> 
+					<option value='United Kingdom'> 
+					<option value='Grenada'> 
+					<option value='Georgia'> 
+					<option value='Guernsey'> 
+					<option value='Ghana'> 
+					<option value='Gibraltar'> 
+					<option value='Greenland'> 
+					<option value='Gambia'> 
+					<option value='Guinea'> 
+					<option value='Equatorial Guinea'> 
+					<option value='Greece'> 
+					<option value='South Georgia'> 
+					<option value='Guatemala'> 
+					<option value='Guam'> 
+					<option value='Guinea-Bissau'> 
+					<option value='Guyana'> 
+					<option value='Hong Kong'> 
+					<option value='Honduras'> 
+					<option value='Croatia'> 
+					<option value='Haiti'> 
+					<option value='Hungary'> 
+					<option value='Indonesia'> 
+					<option value='Ireland'> 
+					<option value='Israel'> 
+					<option value='Isle of Man'> 
+					<option value='India'> 
+					<option value='British Indian Ocean Territory'> 
+					<option value='Iraq'> 
+					<option value='Iran'> 
+					<option value='Iceland'> 
+					<option value='Italy'> 
+					<option value='Jersey'> 
+					<option value='Jamaica'> 
+					<option value='Jordan'> 
+					<option value='Japan'> 
+					<option value='Kenya'> 
+					<option value='Kyrgyzstan'> 
+					<option value='Cambodia'> 
+					<option value='Kiribati'> 
+					<option value='Comoros'> 
+					<option value='Saint Kitts and Nevis'> 
+					<option value='DPRK (North Korea)'> 
+					<option value='Republic of Korea'> 
+					<option value='Kuwait'> 
+					<option value='Cayman Islands'> 
+					<option value='Kazakhstan'> 
+					<option value='Laos'> 
+					<option value='Lebanon'> 
+					<option value='Saint Lucia'> 
+					<option value='Liechtenstein'> 
+					<option value='Sri Lanka'> 
+					<option value='Liberia'> 
+					<option value='Lesotho'> 
+					<option value='Lithuania'> 
+					<option value='Luxembourg'> 
+					<option value='Latvia'> 
+					<option value='Libya'> 
+					<option value='Morocco'> 
+					<option value='Monaco'> 
+					<option value='Republic of Moldova'> 
+					<option value='Montenegro'> 
+					<option value='Madagascar'> 
+					<option value='Marshall Islands'> 
+					<option value='Republic of Macedonia'> 
+					<option value='Mali'> 
+					<option value='Myanmar (Burma)'> 
+					<option value='Mongolia'> 
+					<option value='Macao'> 
+					<option value='Northern Mariana Islands'> 
+					<option value='Mauritania'> 
+					<option value='Montserrat'> 
+					<option value='Malta'> 
+					<option value='Martinique'> 
+					<option value='Mauritius'> 
+					<option value='Maldives'> 
+					<option value='Malawi'> 
+					<option value='Mexico'> 
+					<option value='Malaysia'> 
+					<option value='Mozambique'> 
+					<option value='Namibia'> 
+					<option value='New Caledonia'> 
+					<option value='Niger'> 
+					<option value='Norfolk Island'> 
+					<option value='Nigeria'> 
+					<option value='Nicaragua'> 
+					<option value='Netherlands'> 
+					<option value='Norway'> 
+					<option value='Nepal'> 
+					<option value='Nauru'> 
+					<option value='Niue'> 
+					<option value='New Zealand'> 
+					<option value='Oman'> 
+					<option value='Panama'> 
+					<option value='Peru'> 
+					<option value='French Polynesia'> 
+					<option value='Palestine'> 
+					<option value='Papua New Guinea'> 
+					<option value='Philippines'> 
+					<option value='Pakistan'> 
+					<option value='Poland'> 
+					<option value='Pitcairn'> 
+					<option value='Puerto Rico'> 
+					<option value='Portugal'> 
+					<option value='Palau'> 
+					<option value='Paraguay'> 
+					<option value='Qatar'> 
+					<option value='Reunion'> 
+					<option value='Romania'> 
+					<option value='Serbia'> 
+					<option value='Russian Federation'> 
+					<option value='Rwanda'> 
+					<option value='Saudi Arabia'> 
+					<option value='Solomon Islands'> 
+					<option value='Seychelles'> 
+					<option value='Sudan'> 
+					<option value='Sweden'> 
+					<option value='Singapore'> 
+					<option value='Saint Helena'> 
+					<option value='Slovenia'> 
+					<option value='Slovakia'> 
+					<option value='Sierra Leone'> 
+					<option value='San Marino'> 
+					<option value='Senegal'> 
+					<option value='Somalia'> 
+					<option value='Suriname'> 
+					<option value='South Sudan'> 
+					<option value='Sao Tome and Principe'> 
+					<option value='El Salvador'> 
+					<option value='Sint Maarten'> 
+					<option value='Syrian Arab Republic'> 
+					<option value='Swaziland'> 
+					<option value='Turks and Caicos Islands'> 
+					<option value='Chad'> 
+					<option value='French Southern Territories'> 
+					<option value='Togo'> 
+					<option value='Thailand'> 
+					<option value='Tajikistan'> 
+					<option value='Tokelau'> 
+					<option value='Timor-Leste'> 
+					<option value='Turkmenistan'> 
+					<option value='Tunisia'> 
+					<option value='Tonga'> 
+					<option value='Turkey'> 
+					<option value='Trinidad and Tobago'> 
+					<option value='Tuvalu'> 
+					<option value='United Republic of Tanzania'> 
+					<option value='Taiwan'> 
+					<option value='Ukraine'> 
+					<option value='Uganda'> 
+					<option value='United States of America'> 
+					<option value='Uruguay'> 
+					<option value='Uzbekistan'> 
+					<option value='Holy See (Vatican City)'> 
+					<option value='Saint Vincent and the Grenadines'> 
+					<option value='Bolivarian Republic of Venezuela'> 
+					<option value='Virgin Islands British'> 
+					<option value='Virgin Islands U.S.'> 
+					<option value='Vietnam'> 
+					<option value='Vanuatu'> 
+					<option value='Samoa'> 
+					<option value='Yemen'> 
+					<option value='South Africa'> 
+					<option value='Zambia'> 
+					<option value='Zimbabwe'>
+				</datalist>
+				<input type='text' value="Speakers' List:" class='textbox' disabled='disabled'>
+				<div id='spscroll'>
+				<table id='splist'>
+				<tr>
+				<td id='sprow'></td>
+				</tr>
+				</table> <input type='button' value='Reset List' class='button' id='resetlist'>
+				</div> <input type='button' value='Next Speaker' class='button' id='rightbottom'> 
+			</div>
+			<div id='centercol'>
+			<div id='flagarea'> <img id='progflag' src='images/flags/united%20nations.svg'> </div> <input type='text' disabled='disabled' value='Model United Nations' id='incount'>
+			<div id='bottomcenter'> <input type='text' value='Motions:' class='textbox' id='motionstext' disabled='disabled'> <textarea cols='30' rows='10' class='motions'></textarea> </div>
+			</div>
+			<div id='rightcol'>
+			<div id='timertop'> <input type='text' placeholder='00:00' id='timermain' disabled>
+			<div id='topbuttons'> <input type='button' value='Start' class='button' id='startmainbutton'> <input type='button' value='Pause' class='button' id='pausemainbutton'> </div>
+			<div id='bottombuttons'> <input type='button' value='Speech' class='button' id='speechbutton'> <input type='button' value='Comment' class='button' id='commentbutton'> </div>
+			</div>
+			<div id='bottomdiv'> <input type='text' value='Speech:' class='textbox right' disabled='disabled'> <input type='text' placeholder='01:30' class='timer' id='speechbox'> <input type='text' value='Comment:' class='textbox right' disabled='disabled'> <input type='text' placeholder='00:30' class='timer' id='commentbox'> <input type='text' value='Caucus:' class='textbox right' disabled='disabled'> <input type='text' placeholder='15:00' id='timercaucus' class='timer'>
+			<div id='caucustimerbuttons'> <input type='button' value='Start' class='button' id='starttopbutton'> <input type='button' value='Pause' class='button' id='pausetopbutton'></div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggZD0iTTAgMGg0MDB2NDAwSDBWMHoiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+PHBhdGggZD0iTTAgMGg0MDB2NDAwSDB6Ii8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iMCIgeDI9IjQwMCIgeTE9IjQwMCIgeTI9IjQwMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHNwcmVhZE1ldGhvZD0icGFkIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwNWQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwOWQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI2IpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNTcgNUM1MiAyNy0zIDEwMSAyIDIxNGM1IDEyNCA3OSAxODUgMjI1IDE4NSAxMjMgMCAxNzItMzIgMTcyLTExMyAwLTY3LTMyLTk2LTEyNC0xMTQtMTA2LTIxLTExOC0yNy0xMTgtNjAgMC02MyAxMDItNTMgMTU5LTIyIDUxIDI2IDcyLTI2IDU4LTQxQzMyMy00IDE5OS00IDE1NyA1ek05MiAxNThjMTIgMzAgNDUgNDcgMTI4IDY0IDc3IDE2IDk5IDI2IDEwNiA0OCAxOCA1NS01MiA5Mi0xNDIgNzQtODEtMTYtMTI0LTkyLTEwNS0xODMgNC0yMCA2LTIwIDEzLTN6Ii8+PC9nPjwvc3ZnPg==" alt="Spencer Churchill" title="Created by Spencer Churchill" id="sc">
+		</div>
+	</body>
 </html>
