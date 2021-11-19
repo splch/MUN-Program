@@ -2,10 +2,9 @@
   "name": "MUN Program",
   "manifest_version": 3,
   "author": "Spencer Churchill",
-  "permissions": ["tabs", "storage"],
   "host_permissions": ["https://en.wikipedia.org/w/api.php"],
   "short_name": "MUN",
-  "version": "9.88",
+  "version": "9.89",
   "icons": {
     "128": "images/logos/icon.png"
   },
