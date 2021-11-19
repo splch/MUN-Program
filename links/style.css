@@ -16,6 +16,14 @@ body {
   overflow: hidden;
 }
 
+div, img, input, textarea {
+  border-radius: 10px;
+}
+
+input, textarea {
+  outline: none;
+}
+
 .textbox {
   color: #ffffff;
   font-size: 1.3vw;
@@ -240,3 +248,4 @@ body {
   bottom: 0;
   right: 0;
 }
+
