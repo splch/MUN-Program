@@ -16,11 +16,15 @@ body {
   overflow: hidden;
 }
 
-div, img, input, textarea {
+div,
+img,
+input,
+textarea {
   border-radius: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
 }
 
@@ -37,7 +41,7 @@ input, textarea {
   cursor: pointer;
   font-size: 1vw;
   color: #333333;
-  margin: 0.1%;
+  margin: 3px 1px 1px 1px;
 }
 
 #morespeakers {
@@ -248,4 +252,3 @@ input, textarea {
   bottom: 0;
   right: 0;
 }
-
